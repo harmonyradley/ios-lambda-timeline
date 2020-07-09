@@ -16,6 +16,7 @@ class ImagePostViewController: UIViewController {
     @IBOutlet var inputRadiusSlider: UISlider!
     @IBOutlet var inputAngleSlider: UISlider!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var inputGradient: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,9 @@ class ImagePostViewController: UIViewController {
         updateImage()
     }
 
+    @IBAction func gradientChanged(_ sender: Any) {
+        updateImage()
+    }
 
     // MARK: - Image Filtering
 
